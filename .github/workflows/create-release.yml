@@ -39,13 +39,13 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload release assets
-        uses: AaronNGray/upload-assets@0.4.2
+        uses: AaronNGray/upload-assets@0.5.0
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           asset_paths: '["README.md", "LICENSE"]'
 #      - name: Upload release assets
-#        uses: AaronNGray/upload-assets@0.5.5
+#        uses: AaronNGray/upload-assets@0.5.0
 #        env:
 #          GITHUB_TOKEN: ${{ github.token }}
 #        with:
