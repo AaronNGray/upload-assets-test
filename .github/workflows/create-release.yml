@@ -39,7 +39,7 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload release assets
-        uses: alexellis/upload-assets@0.4.1
+        uses: AaronNGray/upload-assets@0.4.2
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
