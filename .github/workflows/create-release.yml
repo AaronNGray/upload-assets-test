@@ -3,6 +3,7 @@ on:
     # Sequence of patterns matched against refs/tags
     tags:
       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+  workflow_dispatch:
 
 name: Create Release
 
@@ -38,7 +39,7 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload release assets
-        uses: AaronNGray/upload-assets@0.5.2
+        uses: AaronNGray/upload-assets@13926a61cdb2cb35f5fdef1c06b8b591523236d3
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
